@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">DontPad Clone - PDM</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="tag_hint">Search or create your tag</string>
+    <string name="titleTextMode">Text</string>
+    <string name="titleImageMode">Image</string>
+</resources>
