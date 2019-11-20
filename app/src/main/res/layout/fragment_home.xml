@@ -21,12 +21,18 @@
         android:id="@+id/tagTextInputLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tagTextInputEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/tag_hint" />
+            android:hint="@string/tag_hint"
+            android:text=""
+            android:focusable="true"
+            android:focusableInTouchMode="true"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <EditText
@@ -37,6 +43,9 @@
         android:layout_marginTop="5dp"
         app:layout_constraintTop_toBottomOf="@+id/tagTextInputLayout"
         app:layout_constraintEnd_toEndOf="parent"
-        android:text="Your Content Here"/>
+        android:text="Your Content Here"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:focusedByDefault="true"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
