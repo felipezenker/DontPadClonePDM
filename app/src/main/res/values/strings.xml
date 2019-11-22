@@ -6,4 +6,6 @@
     <string name="tag_hint">Search or create your tag</string>
     <string name="titleTextMode">Text</string>
     <string name="titleImageMode">Image</string>
+    <string name="content_hint">Your Content Here</string>
+    <string name="cant_take_pic">The photo was not taken, please try again later.</string>
 </resources>
