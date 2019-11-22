@@ -51,7 +51,28 @@ public class HomeFragment extends Fragment {
         db = FirebaseFirestore.getInstance();
         dontPadClone = db.collection("dontPadClone");
         dontPadClone.document("welcome").set(welcome);
-        //docWelcome = dontPadClone.document("welcome");
+        docRef = dontPadClone.document("welcome");
+        docRef.get()
+                .addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
+                    @Override
+                    public void onComplete(@NonNull Task<DocumentSnapshot> task) {
+                        if(task.isSuccessful()) {
+                            DocumentSnapshot doc = task.getResult();
+                            if(doc.exists()) {
+                                content = doc.getString("content");
+                                textContentEditText.setText(content);
+                            }
+                            else {
+                                newDoc.put("content", "");
+                                tagText = tagTextInputEditText.getText().toString();
+                                dontPadClone.document(tagText).set(newDoc);
+                            }
+                        }
+                        else {
+                            textContentEditText.setText(task.getException().getMessage());
+                        }
+                    }
+                });
     }
 
     @Override

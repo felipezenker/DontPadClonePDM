@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1018180624770",
+    "firebase_url": "https://dontpadclone-57ddb.firebaseio.com",
+    "project_id": "dontpadclone-57ddb",
+    "storage_bucket": "dontpadclone-57ddb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1018180624770:android:22ea5629903b70f1ea6f9b",
+        "android_client_info": {
+          "package_name": "br.com.zenker.dontpadclone_pdm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1018180624770-mk1fkp8ohc0fdiekve61s20p7pqdl7b8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.zenker.dontpadclone_pdm",
+            "certificate_hash": "1049d15e6413b0b321fafcdfbed9208d714fe32c"
+          }
+        },
+        {
+          "client_id": "1018180624770-ofv4k3uv7i8r3a26o28ccln4p397evbn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOD6McunB1Ca9XbGKlyuMwP7jKrJ9Fte0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1018180624770-ofv4k3uv7i8r3a26o28ccln4p397evbn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
